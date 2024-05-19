@@ -20,6 +20,7 @@ def hbnb():
 @app.route('/c/<text>')
 def C_text(text):
     """ Return 'C ' followed by text from html request """
+    return "C {}".format(text.replace("_", " "))
 
 
 if __name__ == '__main__':
